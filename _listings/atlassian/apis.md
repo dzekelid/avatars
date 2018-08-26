@@ -55,6 +55,110 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerentityid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerentityid-get-openapi.md
+- name: Jira Cloud REST API - Create issue type avatar
+  x-api-slug: api2issuetypeidavatar2-post
+  description: |-
+    Creates an avatar for the issue type. Specify the avatar's local file location as binary data in the body of the request. Also, include the following headers:
+
+    *   `X-Atlassian-Token: no-check`
+    *   `Content-Type: image/_image type_` Valid image types are JPEG, GIF, or PNG.
+
+    For example: `curl --request POST \ --user email@example.com: \ --header 'X-Atlassian-Token: no-check' \ --header 'Content-Type: image/< image_type>' \ --data-binary "" \ --url 'https://your-domain.atlassian.net/rest/api/2/issuetype/{issueTypeId}'This` The avatar is cropped to a square. If no crop parameters are specified, the square originates at the top left of the image. The length of the square's sides is set to the smaller of the height or width of the image. The cropped image is then used to create avatars of 16x16, 24x24, 32x32, and 48x48 in size. After creating the avatar, use [Update issue type](https://developer.atlassian.com/cloud/jira/platform/rest/#api-api-2-issuetype-id-put) to set it as the issue type's active avatar. **[Permissions](https://confluence.atlassian.com/x/FQiiLQ) required:** _Administer Jira_ [global permission](href=).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2issuetypeidavatar2-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2issuetypeidavatar2-post-openapi.md
+- name: Jira Cloud REST API - Update project avatar
+  x-api-slug: api2projectprojectidorkeyavatar-put
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatar-put-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatar-put-openapi.md
+- name: Jira Cloud REST API - Delete project avatar
+  x-api-slug: api2projectprojectidorkeyavatarid-delete
+  description: Deletes an avatar of a single project. It is only possible to delete
+    custom avatars.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatarid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatarid-delete-openapi.md
+- name: Jira Cloud REST API - Create project avatar
+  x-api-slug: api2projectprojectidorkeyavatar2-post
+  description: Creates an avatar for a single project. Use it to upload an image to
+    be be set as a project's avatar. The uploaded image will be cropped according
+    to the crop parameters defined in the request. If no crop parameters are specified,
+    the image will be cropped to a square. The square will originate at the top left
+    of the image and the length of each side will be set to the smaller of the height
+    or width of the image.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatar2-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2projectprojectidorkeyavatar2-post-openapi.md
+- name: Jira Cloud REST API - Store avatar
+  x-api-slug: api2universal-avatartypetypeownerentityid-post
+  description: Creates an avatar for a given entity, for the given entity ID and type
+    of entity. For example, you can create an avatar for an issue type, given the
+    issue type Id. Uploading an avatar is supported for different types of entities
+    across the Jira products. However, it is supported for the "project" and "issuetype"
+    entity types for all Jira products. The uploaded image will be cropped according
+    to the crop parameters listed below. If no crop parameters are specified, the
+    image will be cropped to a square. The square will originate at the top left of
+    the image and the length of each side will be set to the smaller of the height
+    or width of the image.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerentityid-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerentityid-post-openapi.md
+- name: Jira Cloud REST API - Delete avatar
+  x-api-slug: api2universal-avatartypetypeownerowningobjectidavatarid-delete
+  description: Deletes avatar
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
+  humanURL: http://atlassian.com/
+  baseURL: https:////
+  tags: Coding, Programming, Wiki, Issues, Code Issues, Stack Network, SaaS, Technology,
+    Enterprise, API Provider, API Service Provider, Profiles, Relative Data, Service
+    API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerowningobjectidavatarid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/atlassian/api2universal-avatartypetypeownerowningobjectidavatarid-delete-openapi.md
 x-common:
 - type: x-openapi
   url: https://developer.atlassian.com/cloud/jira/platform/swagger.v3.json
