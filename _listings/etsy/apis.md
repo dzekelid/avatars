@@ -6,11 +6,67 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.j
 x-kinRank: "9"
 x-alexaRank: "187"
 tags: Avatars
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/etsy/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Etsy - Post Users User Avatar
+  x-api-slug: usersuser-idavatar-post
+  description: Upload a new user avatar image
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private/
+  tags: Children, Clothing, Crochet, Dolls and Miniatures, Furniture, Geekery, Glass,
+    Holidays, Housewares, Jewelry, Knitting, Needlecraft, Paper Goods, Patterns, Pets,
+    Plants and Edibles, Quilts, Supplies, Toys, Vintage, Weddings, Woodworking, Crafts,
+    API LIfeyclessss, Stack Network, Stack, internet, Technology, Marketplace, API
+    Provider, Products, Profiles, General Data, Relative Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/etsy/usersuser-idavatar-post-openapi.md
+- name: Etsy - Get Users User Avatar Src
+  x-api-slug: usersuser-idavatarsrc-get
+  description: Get avatar image source
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private/
+  tags: Children, Clothing, Crochet, Dolls and Miniatures, Furniture, Geekery, Glass,
+    Holidays, Housewares, Jewelry, Knitting, Needlecraft, Paper Goods, Patterns, Pets,
+    Plants and Edibles, Quilts, Supplies, Toys, Vintage, Weddings, Woodworking, Crafts,
+    API LIfeyclessss, Stack Network, Stack, internet, Technology, Marketplace, API
+    Provider, Products, Profiles, General Data, Relative Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/etsy/usersuser-idavatarsrc-get-openapi.md
+- name: Etsy - Get Users User Avatar Src
+  x-api-slug: usersuser-idavatarsrc-get
+  description: Get avatar image source
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private/
+  tags: Children, Clothing, Crochet, Dolls and Miniatures, Furniture, Geekery, Glass,
+    Holidays, Housewares, Jewelry, Knitting, Needlecraft, Paper Goods, Patterns, Pets,
+    Plants and Edibles, Quilts, Supplies, Toys, Vintage, Weddings, Woodworking, Crafts,
+    API LIfeyclessss, Stack Network, Stack, internet, Technology, Marketplace, API
+    Provider, Products, Profiles, General Data, Relative Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/etsy/usersuser-idavatarsrc-get-openapi.md
+- name: Etsy - Post Users User Avatar
+  x-api-slug: usersuser-idavatar-post
+  description: Upload a new user avatar image
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/192-etsy.jpg
+  humanURL: http://www.etsy.com/
+  baseURL: https://openapi.etsy.com//v2/private/
+  tags: Children, Clothing, Crochet, Dolls and Miniatures, Furniture, Geekery, Glass,
+    Holidays, Housewares, Jewelry, Knitting, Needlecraft, Paper Goods, Patterns, Pets,
+    Plants and Edibles, Quilts, Supplies, Toys, Vintage, Weddings, Woodworking, Crafts,
+    API LIfeyclessss, Stack Network, Stack, internet, Technology, Marketplace, API
+    Provider, Products, Profiles, General Data, Relative Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/etsy/usersuser-idavatar-post-openapi.md
 x-common:
 - type: x-api-json--authoritative
   url: http://apis.io/apisdef/etsy.json

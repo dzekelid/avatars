@@ -7,11 +7,25 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr
 x-kinRank: "7"
 x-alexaRank: "59"
 tags: Avatars
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/tumblr/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Tumblr - Get Blog Base Hostname Avatar Size
+  x-api-slug: blogbasehostnameavatarsize-get
+  description: Retrieves a blog's avatar in one of 9 different sizes.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/265-tumblr.jpg
+  humanURL: https://www.tumblr.com/
+  baseURL: https://api.tumblr.com//v2/
+  tags: Blog, Social, Content, Communications, Blogging, Communications, Stack, Media,
+    Technology, internet, Mobile, General Data, Relative Data, Service API, Pedestal,
+    Historical Data API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/tumblr/blogbasehostnameavatarsize-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/tumblr/blogbasehostnameavatarsize-get-openapi.md
 - name: Tumblr - Get Blog Base Hostname Avatar Size
   x-api-slug: blogbasehostnameavatarsize-get
   description: Retrieves a blog's avatar in one of 9 different sizes.

@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: Trello
-x-complete: 1
+x-complete: 0
 info:
-  title: Trello
-  description: this-document-describes-the-rest-api-of-trello-as-published-by-trello-com---a-hrefhttpstrello-comdocsindex-html-target-blankofficial-documentationa--a-hrefhttpstrello-comdocsapi-target-blankthe-html-pages-that-were-scraped-in-order-to-generate-this-specification-a
+  title: Trello Post Members Avatar
+  description: Post members avatar.
   termsOfService: https://trello.com/legal
   contact:
     name: Trello
@@ -45,3 +46,17 @@ paths:
       tags:
       - Members
       - Avatar
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

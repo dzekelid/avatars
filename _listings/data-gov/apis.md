@@ -12,11 +12,33 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Avatars
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/data-gov/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Data.gov API - Add Me Avatar
+  x-api-slug: meavatar-post
+  description: Upload a new avatar
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/data-gov/meavatar-post-openapi.md
+- name: Data.gov API - Add Me Avatar
+  x-api-slug: meavatar-post
+  description: Upload a new avatar
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
+  humanURL: http://data.gov/
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/avatars/master/_listings/data-gov/meavatar-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://danske.bank.api.gallery.streamdata.io

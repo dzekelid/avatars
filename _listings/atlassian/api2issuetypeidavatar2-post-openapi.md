@@ -70,6 +70,43 @@ paths:
           description: OK
       tags:
       - Avatars
+    post:
+      summary: Store avatar
+      description: Creates an avatar for a given entity, for the given entity ID and
+        type of entity. For example, you can create an avatar for an issue type, given
+        the issue type Id. Uploading an avatar is supported for different types of
+        entities across the Jira products. However, it is supported for the "project"
+        and "issuetype" entity types for all Jira products. The uploaded image will
+        be cropped according to the crop parameters listed below. If no crop parameters
+        are specified, the image will be cropped to a square. The square will originate
+        at the top left of the image and the length of each side will be set to the
+        smaller of the height or width of the image.
+      operationId: com.atlassian.jira.rest.v2.issue.UniversalAvatarResource.storeAvatar_post
+      x-api-path-slug: api2universal-avatartypetypeownerentityid-post
+      parameters:
+      - in: path
+        name: entityId
+        description: The Id of the entity that you want to update the avatar of
+      - in: query
+        name: size
+        description: (optional) The length of each side of the crop region
+      - in: path
+        name: type
+        description: The type of the entity that you want to update the avatar of
+      - in: query
+        name: x
+        description: (optional) The X coordinate of the top-left corner of the crop
+          region
+      - in: query
+        name: "y"
+        description: (optional) The Y coordinate of the top-left corner of the crop
+          region
+      responses:
+        200:
+          description: OK
+      tags:
+      - Store
+      - Avatar
   /api/2/issuetype/{id}/avatar2:
     post:
       summary: Create issue type avatar
@@ -101,6 +138,91 @@ paths:
       tags:
       - Issue
       - Type
+      - Avatar
+  /api/2/project/{projectIdOrKey}/avatar:
+    put:
+      summary: Update project avatar
+      description: ""
+      operationId: com.atlassian.jira.rest.v2.issue.ProjectResource.updateProjectAvatar_put
+      x-api-path-slug: api2projectprojectidorkeyavatar-put
+      parameters:
+      - in: path
+        name: projectIdOrKey
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project
+      - Avatar
+  /api/2/project/{projectIdOrKey}/avatar/{id}:
+    delete:
+      summary: Delete project avatar
+      description: Deletes an avatar of a single project. It is only possible to delete
+        custom avatars.
+      operationId: com.atlassian.jira.rest.v2.issue.ProjectResource.deleteProjectAvatar_delete
+      x-api-path-slug: api2projectprojectidorkeyavatarid-delete
+      parameters:
+      - in: path
+        name: id
+        description: ID of the avatar
+      - in: path
+        name: projectIdOrKey
+        description: The project ID or project key (case sensitive)
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project
+      - Avatar
+  /api/2/project/{projectIdOrKey}/avatar2:
+    post:
+      summary: Create project avatar
+      description: Creates an avatar for a single project. Use it to upload an image
+        to be be set as a project's avatar. The uploaded image will be cropped according
+        to the crop parameters defined in the request. If no crop parameters are specified,
+        the image will be cropped to a square. The square will originate at the top
+        left of the image and the length of each side will be set to the smaller of
+        the height or width of the image.
+      operationId: com.atlassian.jira.rest.v2.issue.ProjectResource.createProjectAvatar_post
+      x-api-path-slug: api2projectprojectidorkeyavatar2-post
+      parameters:
+      - in: path
+        name: projectIdOrKey
+        description: The project ID or project key (case sensitive)
+      - in: query
+        name: size
+        description: (optional) Length of each side of the crop region
+      - in: query
+        name: x
+        description: (optional) X coordinate of the top-left corner of the crop region
+      - in: query
+        name: "y"
+        description: (optional) Y coordinate of the top-left corner of the crop region
+      responses:
+        200:
+          description: OK
+      tags:
+      - Project
+      - Avatar
+  /api/2/universal_avatar/type/{type}/owner/{owningObjectId}/avatar/{id}:
+    delete:
+      summary: Delete avatar
+      description: Deletes avatar
+      operationId: com.atlassian.jira.rest.v2.issue.UniversalAvatarResource.deleteAvatar_delete
+      x-api-path-slug: api2universal-avatartypetypeownerowningobjectidavatarid-delete
+      parameters:
+      - in: path
+        name: id
+        description: database id for avatar
+      - in: path
+        name: owningObjectId
+      - in: path
+        name: type
+        description: Project id or project key
+      responses:
+        200:
+          description: OK
+      tags:
       - Avatar
 x-streamrank:
   polling_total_time_average: 0

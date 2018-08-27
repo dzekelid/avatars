@@ -206,6 +206,26 @@ paths:
       tags:
       - Project
       - Avatar
+  /api/2/universal_avatar/type/{type}/owner/{owningObjectId}/avatar/{id}:
+    delete:
+      summary: Delete avatar
+      description: Deletes avatar
+      operationId: com.atlassian.jira.rest.v2.issue.UniversalAvatarResource.deleteAvatar_delete
+      x-api-path-slug: api2universal-avatartypetypeownerowningobjectidavatarid-delete
+      parameters:
+      - in: path
+        name: id
+        description: database id for avatar
+      - in: path
+        name: owningObjectId
+      - in: path
+        name: type
+        description: Project id or project key
+      responses:
+        200:
+          description: OK
+      tags:
+      - Avatar
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
